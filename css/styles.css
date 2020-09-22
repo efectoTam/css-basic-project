@@ -11,6 +11,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "fjalla";
+  src:  url("./fonts/FjallaOne-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  src:  url("./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+        url("./fonts/websymbols-regular-webfont.eot");
+  src:  url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("./fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Generic styles */
 * {
   padding: 0px;
@@ -28,13 +46,35 @@ a {
 }
 
 a:hover {
-  color: #285616;
-  
+  color: #285616;  
 }
 
 a:visited {
   color: #529125;
-  
+}
+
+.red {
+  color: #9b2422!important;
+}
+
+.blue {
+  color: #0c73f2!important;
+}
+
+.orange {
+  color: #d69d2a !important;
+}
+
+.icon {
+  font-family: "icons";
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
 }
 
 /* Forms */
@@ -205,11 +245,11 @@ will have double border */
   width: 1250px;
   min-height: 1100px;
   margin: 0 auto;
+  font-family: sans-serif, Arial, Helvetica;
 }
 
 /* Sidebar */
 #aside, #frase {
-  clear: both;
   width: 200px;
   float: left;
   margin: 30px;
@@ -282,4 +322,78 @@ will have double border */
 #aside label {
   margin: 0 auto;
   text-align: center;
+}
+
+/* Sections */
+#sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+}
+
+#sections .title {
+  font-family: "fjalla";
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#sections section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 4px #c9c9c9;
+  color: #333333;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sections .date {
+  color: gray;
+  font-size: 14px;
+}
+
+#sections .stickerone,
+#sections .stickertwo {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#sections .stickertwo {
+  margin-left: 860px;
+}
+
+#history {
+  float: right;
+  margin-top: 20px;
+  margin-right: 18px;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px gray;
 }
